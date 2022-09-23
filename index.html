@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My iOS Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="calculator">
+        <div class="output"></div>
+
+        <!-- <div>
+            <input type="number" id="display" readonly>
+        </div> -->
+
+        </div>
+            <button onclick="del()">AC</button>
+            <button onclick="negate('+/-')">+/-</button>
+            <button onclick="percent('%')">%</button>
+            <button id="operator" onclick="divide('/')">&divide;</button>
+
+            <button onclick="addNo(7)">7</button>
+            <button onclick="addNo(8)">8</button>
+            <button onclick="addNo(9)">9</button>
+            <button id="operator" onclick="multiply()">x</button>
+
+            <button onclick="addNo(4)">4</button>
+            <button onclick="addNo(5)">5</button>
+            <button onclick="addNo(6)">6</button>
+            <button id="operator" onclick="minus('-')">-</button>
+
+            <button onclick="addNo(1)">1</button>
+            <button onclick="addNo(2)">2</button>
+            <button onclick="addNo(3)">3</button>
+            <button id="operator" onclick="add('+')">+</button>
+
+            <button class="zero" onclick="addNo(0)">0</button>
+            <button onclick="dot('.')">.</button>
+            <button id="on" onclick="off()">OFF</button>
+            <button class="equ" id="operator" onclick="equ('=')">=</button>
+    </main>
+
+</body>
+
+</html>
